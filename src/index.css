@@ -1,13 +1,152 @@
-body {
+*{
   margin: 0;
+  padding: 0 ;
+  box-sizing: border-box;
+  background-color:black;
+  animation: change 45s infinite;
+}
+
+body {  
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.img1{
+  position: fixed;
+  top:10%;
+  left:20%;
+  width:200px;
+  height:690px;
+  background:transparent;
+  animation: imgone 60s infinite;
 }
+.img2{
+  position: fixed;
+  top:30%;
+  left:40%;
+  width:200px;
+  height:533;
+  background:transparent;
+  animation: imgtwo 60s infinite;
+}
+.img3{
+  position: fixed;
+  top:5%;
+  left:5%;
+  width:234px;
+  height:690px;
+  background:transparent;
+  animation: imgthree 60s infinite;
+}
+.cover{
+  transform:translate(0,0,0);
+  background-color: black;
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  animation: shadow 15s infinite ;
+}
+
+@keyframes shadow{
+  0%{
+    opacity:1 ;
+  }
+
+  10%{
+    opacity: 0.9;
+  }
+  50%{
+    opacity: 0;
+  }
+  90%{
+    opacity: 0.9;
+  }
+
+  100%{
+    opacity:1;
+  }
+}
+@keyframes imgone{
+  0%{
+    opacity:1 ;
+    
+  }
+
+  34%{
+    opacity:0.6 ;
+    transform:translateX(-60px);
+    transform:scale(1.5);
+
+  }
+  66%{
+    opacity:0 ;
+    
+  }
+
+  100%{
+    opacity:0;
+    
+  }
+}
+@keyframes imgtwo{
+  0%{
+    opacity:0 ;
+  }
+  34%{
+    opacity:0.6 ;    
+  }
+  66%{
+    opacity:1 ;
+    transform:rotateZ(-10deg);
+  }
+  80%{
+    transform:rotateZ(15deg);
+  }
+  100%{
+    opacity:0;
+    transform:rotateZ(-5deg);
+  }
+}
+@keyframes imgthree{
+  0%{
+    opacity:0 ;
+  }
+  34%{
+    opacity:0 ;
+    transform:rotateZ(120deg);
+  }
+  66%{
+    opacity:0 ;
+    opacity:rotateZ(120deg);
+  }
+  80%{
+    opacity:.6;
+  }
+  100%{
+    opacity:1;
+    transform:rotateZ(0deg);
+  }
+}
+
+@keyframes change{
+  0%{
+   background-color: #D90368;
+  }
+
+  33%{
+    background-color: #69626D;
+  }
+  66%{
+    background-color: #72705B;
+  }
+
+  100%{
+    background-color: #ed1c24;
+  }
+}
+
+
