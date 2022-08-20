@@ -13,6 +13,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.audio{
+opacity:.5;
+height:20px;
+}
 .img1{
   position: fixed;
   top:10%;
