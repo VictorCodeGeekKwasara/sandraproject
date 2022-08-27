@@ -15,8 +15,12 @@ body {
 }
 
 .audio{
+position:absolute;
+top:90%;
+left:10%;
 opacity:.5;
-height:20px;
+height:5%;
+width:80%;
 }
 .img1{
   position: fixed;
